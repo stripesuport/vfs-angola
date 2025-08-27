@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Calendar, Clock, Shield, CheckCircle } from "lucide-react"
+import { CheckCircle } from "lucide-react"
 
 export default function HomePage() {
   return (
@@ -11,9 +11,14 @@ export default function HomePage() {
       <header className="bg-white shadow-sm border-b">
         <div className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex items-center gap-3">
-            <Image src="/vfs-logo.png" alt="VFS Global" width={120} height={40} className="h-10 w-auto" />
+            <Link href="/" className="hover:opacity-80 transition-opacity">
+              <Image src="/vfs-logo.png" alt="VFS Global" width={120} height={40} className="h-10 w-auto" />
+            </Link>
             <div className="h-8 w-px bg-gray-300" />
-            <h1 className="text-xl font-semibold text-gray-800">Agendamento de Visto Angola - Portugal </h1>
+            <div className="flex-1">
+              <h1 className="text-xl font-semibold text-gray-900">Agendamento de Visto</h1>
+              <p className="text-sm text-gray-600">Angola → Portugal</p>
+            </div>
           </div>
         </div>
       </header>
@@ -21,19 +26,12 @@ export default function HomePage() {
       {/* Hero Section */}
       <main className="max-w-6xl mx-auto px-4 py-12">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 text-balance">
-            Agende sua data para solicitação de visto
-          </h2>
-          <p className="text-xl font-medium mb-2 text-orange-500">Angola → Portugal</p>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
-            Processo simples e seguro para agendar sua consulta de visto. Preencha seus dados, escolha a data e horário,
-            e finalize o pagamento.
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 text-balance">Agende sua data para visto de Portugal</h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            {"Processo rápido e seguro para agendamento de vistos "}
+            <br />
+            {"Centro de atendimento VFS Global em Luanda"}
           </p>
-        </div>
-
-        {/* Features Grid */}
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
-                
         </div>
 
         {/* CTA Section */}
@@ -83,10 +81,10 @@ export default function HomePage() {
       <footer className="bg-gray-50 border-t mt-16">
         <div className="max-w-6xl mx-auto px-4 py-8">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Image src="/vfs-logo.png" alt="VFS Global" width={100} height={32} className="h-8 w-auto" />
+            
           </div>
           <p className="text-center text-gray-600 text-sm">
-            © 2025 Agendamento de Visto Angola - Portugal. Todos os direitos reservados.
+            AR-8.0.2 © 2025 VFS Global Group. Todos os Direitos Reservados. Informações compatíveis com ISO 23026. Nossos sites são criados para visualização em navegadores modernos; usuários do Internet Explorer, por favor, atualizem.
           </p>
         </div>
       </footer>

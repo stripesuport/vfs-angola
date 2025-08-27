@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { ArrowLeft, Calendar, User, ChevronLeft, ChevronRight, FileText, Camera, CreditCard } from "lucide-react"
+import { Calendar, User, ChevronLeft, ChevronRight, FileText, Camera, CreditCard } from "lucide-react"
 
 interface FormData {
   nome: string
@@ -124,21 +124,22 @@ export default function AgendamentoPage() {
     return formData.dataAgendamento === `2025-09-${day.toString().padStart(2, "0")}`
   }
 
+  const appointmentData = JSON.parse(localStorage.getItem("appointmentData") || "{}")
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* Header */}
       <header className="bg-white shadow-sm border-b">
         <div className="max-w-6xl mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3">
+            <Link href="/" className="hover:opacity-80 transition-opacity">
               <Image src="/vfs-logo.png" alt="VFS Global" width={120} height={40} className="h-10 w-auto" />
-              <div className="h-8 w-px bg-gray-300" />
-              
-            </div>
-            <Link href="/" className="flex items-center gap-2 text-blue-600 hover:text-blue-700">
-              <ArrowLeft className="w-4 h-4" />
-              Voltar
             </Link>
+            <div className="h-8 w-px bg-gray-300" />
+            <div className="flex-1">
+              <h1 className="text-xl font-semibold text-gray-900">Agendamento de Visto</h1>
+              <p className="text-sm text-gray-600">Angola → Portugal</p>
+            </div>
           </div>
         </div>
       </header>
@@ -817,7 +818,25 @@ export default function AgendamentoPage() {
             </CardContent>
           </Card>
         )}
+
+        {/* Actions */}
+        <div className="text-center mt-8 space-y-4">
+          
+          
+        </div>
       </main>
+
+      {/* Footer */}
+      <footer className="bg-gray-50 border-t mt-16">
+        <div className="max-w-6xl mx-auto px-4 py-8">
+          <div className="flex items-center justify-center gap-3 mb-4"></div>
+          <p className="text-center text-gray-600 text-sm">
+            AR-8.0.2 © 2025 VFS Global Group. Todos os Direitos Reservados. Informações compatíveis com ISO 23026.
+            Nossos sites são criados para visualização em navegadores modernos; usuários do Internet Explorer, por
+            favor, atualizem.
+          </p>
+        </div>
+      </footer>
     </div>
   )
 }

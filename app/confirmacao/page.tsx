@@ -104,13 +104,17 @@ export default function ConfirmacaoPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      {/* Header */}
       <header className="bg-white shadow-sm border-b">
         <div className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex items-center gap-3">
-            <Image src="/vfs-logo.png" alt="VFS Global" width={120} height={40} className="h-10 w-auto" />
+            <Link href="/" className="hover:opacity-80 transition-opacity">
+              <Image src="/vfs-logo.png" alt="VFS Global" width={120} height={40} className="h-10 w-auto" />
+            </Link>
             <div className="h-8 w-px bg-gray-300" />
-            <h1 className="text-xl font-semibold text-gray-800">Agendamento Confirmado</h1>
+            <div className="flex-1">
+              <h1 className="text-xl font-semibold text-gray-900">Agendamento de Visto</h1>
+              <p className="text-sm text-gray-600">Angola → Portugal</p>
+            </div>
           </div>
         </div>
       </header>
@@ -284,14 +288,15 @@ export default function ConfirmacaoPage() {
         </div>
       </main>
 
-      {/* Footer */}
       <footer className="bg-gray-50 border-t mt-16">
         <div className="max-w-6xl mx-auto px-4 py-8">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Image src="/vfs-logo.png" alt="VFS Global" width={100} height={32} className="h-8 w-auto" />
           </div>
           <p className="text-center text-gray-600 text-sm">
-            © 2025 Agendamento de Visto Angola - Portugal. Todos os direitos reservados.
+            AR-8.0.2 © 2025 VFS Global Group. Todos os Direitos Reservados. Informações compatíveis com ISO 23026.
+            Nossos sites são criados para visualização em navegadores modernos; usuários do Internet Explorer, por
+            favor, atualizem.
           </p>
         </div>
       </footer>
