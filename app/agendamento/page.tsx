@@ -586,10 +586,18 @@ export default function AgendamentoPage() {
                     <SelectValue placeholder="Selecione o tipo de visto" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="turismo">Turismo</SelectItem>
-                    <SelectItem value="estudo">Estudo</SelectItem>
-                    <SelectItem value="contrato-trabalho">Contrato de Trabalho</SelectItem>
-                    <SelectItem value="procura-trabalho">Procura de Trabalho</SelectItem>
+                    <SelectItem value="schengen-curta-duracao">
+                      Visto Schengen (Curta Duração) - Turismo, negócios, visita, saúde &lt; 90 dias
+                    </SelectItem>
+                    <SelectItem value="nacional-estada-temporaria">
+                      Visto Nacional – Estada Temporária - Estadia prolongada, sem residência permanente
+                    </SelectItem>
+                    <SelectItem value="nacional-residencia">
+                      Visto Nacional – Residência - Estudo, trabalho, reagrupamento, etc.
+                    </SelectItem>
+                    <SelectItem value="nacional-procura-trabalho">
+                      Visto Nacional – Procura de Trabalho - Até 120 dias para buscar emprego
+                    </SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -820,10 +828,7 @@ export default function AgendamentoPage() {
         )}
 
         {/* Actions */}
-        <div className="text-center mt-8 space-y-4">
-          
-          
-        </div>
+        <div className="text-center mt-8 space-y-4"></div>
       </main>
 
       {/* Footer */}
