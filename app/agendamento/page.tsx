@@ -104,10 +104,11 @@ export default function AgendamentoPage() {
   }
 
   const handleConfirmAndPay = () => {
-    // Store form data in localStorage for later use
-    localStorage.setItem("appointmentData", JSON.stringify(formData))
-    const successUrl = encodeURIComponent(`${window.location.origin}/confirmacao`)
-    window.location.href = `https://buy.stripe.com/9B65kDeuNfag6BV85D5wI00?success_url=${successUrl}`
+    if (typeof window !== "undefined") {
+      localStorage.setItem("appointmentData", JSON.stringify(formData))
+      const successUrl = encodeURIComponent(`${window.location.origin}/confirmacao`)
+      window.location.href = `https://buy.stripe.com/9B65kDeuNfag6BV85D5wI00?success_url=${successUrl}`
+    }
   }
 
   const handleDateSelect = (day: number) => {
@@ -124,7 +125,7 @@ export default function AgendamentoPage() {
     return formData.dataAgendamento === `2025-09-${day.toString().padStart(2, "0")}`
   }
 
-  const appointmentData = JSON.parse(localStorage.getItem("appointmentData") || "{}")
+  // const appointmentData = JSON.parse(localStorage.getItem("appointmentData") || "{}")
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
