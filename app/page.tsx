@@ -28,9 +28,9 @@ export default function HomePage() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4 text-balance">Agende sua data para visto de Portugal</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            {"Processo rápido e seguro para agendamento de vistos "}
+            Processo rápido e seguro para agendamento de vistos
             <br />
-            {"Centro de atendimento VFS Global em Luanda"}
+            Centro de atendimento VFS Global em Luanda
           </p>
         </div>
 
@@ -80,11 +80,10 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="bg-gray-50 border-t mt-16">
         <div className="max-w-6xl mx-auto px-4 py-8">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            
-          </div>
           <p className="text-center text-gray-600 text-sm">
-            AR-8.0.2 © 2025 VFS Global Group. Todos os Direitos Reservados. Informações compatíveis com ISO 23026. Nossos sites são criados para visualização em navegadores modernos; usuários do Internet Explorer, por favor, atualizem.
+            AR-8.0.2 © 2025 VFS Global Group. Todos os Direitos Reservados. Informações compatíveis com ISO 23026.
+            Nossos sites são criados para visualização em navegadores modernos; usuários do Internet Explorer, por
+            favor, atualizem.
           </p>
         </div>
       </footer>
