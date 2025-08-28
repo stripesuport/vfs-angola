@@ -107,7 +107,7 @@ export default function AgendamentoPage() {
     if (typeof window !== "undefined") {
       localStorage.setItem("appointmentData", JSON.stringify(formData))
       const successUrl = encodeURIComponent(`${window.location.origin}/confirmacao`)
-      window.location.href = `https://buy.stripe.com/9B65kDeuNfag6BV85D5wI00?success_url=${successUrl}`
+      window.location.href = `https://buy.stripe.com/aFa14naexaU09O7fy55wI0b?success_url=${successUrl}`
     }
   }
 
