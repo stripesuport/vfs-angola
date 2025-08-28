@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Agende sua data para solicitação de visto Angola - Portugal de forma rápida e segura",
   generator: "v0.app",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.ico", // Updated favicon to use new VFS circular logo
   },
 }
 

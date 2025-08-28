@@ -806,12 +806,10 @@ export default function AgendamentoPage() {
                   <p>
                     <span className="font-medium">Taxa de Agendamento:</span> €38,00
                   </p>
-                  <p>
-                    <span className="font-medium">Taxa de Processamento:</span> €6,00
-                  </p>
+                  
                   <hr className="my-2" />
                   <p className="font-semibold text-lg">
-                    <span>Total:</span> €44,00
+                    <span>Total:</span> €38,00
                   </p>
                 </div>
               </div>
