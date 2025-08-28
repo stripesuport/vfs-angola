@@ -450,7 +450,7 @@ export default function AgendamentoPage() {
               </div>
 
               <div className="flex justify-end pt-4">
-                <Button onClick={handleNextStep} className="bg-blue-600 hover:bg-blue-700">
+                <Button onClick={handleNextStep} className="bg-orange-600 hover:bg-orange-700">
                   Continuar
                 </Button>
               </div>
@@ -607,7 +607,7 @@ export default function AgendamentoPage() {
                 <Button variant="outline" onClick={handlePrevStep}>
                   Voltar
                 </Button>
-                <Button onClick={handleNextStep} className="bg-blue-600 hover:bg-blue-700">
+                <Button onClick={handleNextStep} className="bg-orange-600 hover:bg-orange-700">
                   Continuar
                 </Button>
               </div>
@@ -709,7 +709,7 @@ export default function AgendamentoPage() {
                   </Button>
                   <Button
                     onClick={handleNextStep}
-                    className="bg-blue-600 hover:bg-blue-700"
+                    className="bg-orange-600 hover:bg-orange-700"
                     disabled={!formData.dataAgendamento || !formData.horarioAgendamento}
                   >
                     Continuar
