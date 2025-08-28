@@ -26,7 +26,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <main className="max-w-6xl mx-auto px-4 py-12">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 text-balance">Agende sua data para visto de Portugal</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 text-balance">Agende sua data para pedido de visto para Portugal</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Processo rápido e seguro para agendamento de vistos
             <br />
